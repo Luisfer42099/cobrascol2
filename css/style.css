@@ -1,0 +1,402 @@
+* {
+    margin: 0%;
+    padding: 0;
+}
+body{
+    background-color: #f1f1f1;
+}
+h1 {
+    font-size: 80px;
+    font-weight: 900;
+    z-index: 100;
+    color: #00008B;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h3, h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    z-index: 100;
+    color: #00008B;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h1.consulta {
+    font-size: 3rem;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+
+h1::after {
+    display: block;
+    width: 30%;
+    height: 10px;
+    content: "";
+    margin: auto;
+    background: #00008B;
+}
+
+nav.navbar {
+    background-color: #00008B;
+    opacity: .7;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(251, 255, 0);
+}
+
+nav.navbar li.nav-item {
+    padding: 0px 10px;
+}
+
+nav.navbar li.nav-item a.nav-link {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+nav.navbar a.navbar-brand img {
+    width: 12rem;
+    padding: 0px 2rem;
+}
+
+button.navbar-toggler {
+    background-color: #ffff;
+}
+
+span.navbar-toggler-icon {
+    background-color: #ffff;
+}
+
+img.imagen {
+    height: 45rem;
+}
+
+@media (max-width: 600px) {
+    img.imagen {
+        height: auto;
+    }
+}
+
+div.carousel-item h5 {
+    color: #00008B;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+div.absolute {
+    width: 100%;
+    height: 100%;
+    top: 76%;
+    right: 0;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.absolute h1 {
+    font-size: 80px;
+    font-weight: 900;
+    z-index: 100;
+    color: #ffff;
+    margin-bottom: 30px;
+}
+
+div.absolute h1::after {
+    display: block;
+    width: 30%;
+    height: 10px;
+    content: "";
+    margin: auto;
+    background: #ffff;
+}
+
+div.oculto {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    div.oculto {
+        display: block;
+        text-align: center;
+    }
+
+    div.absolute {
+        display: none;
+    }
+}
+
+video.video {
+    width: 100%;
+}
+
+div#acor {
+    width: 100%;
+    min-height: 50px;
+    background-color: red;
+    overflow: hidden;
+}
+
+div.subtitulo {
+    width: 100%;
+    min-height: 50px;
+    background-color: #435858;
+    -webkit-transition: height 0.2s;
+}
+
+p.nos {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+div.titaco {
+    width: 100%;
+    height: 50px;
+    background-color: #BBC9CB;
+    overflow: hidden;
+    font-weight: bold;
+    border: 1px solid #80A2DE;
+}
+
+p.titaco {
+    margin: 13px;
+    color: #0000ff;
+    text-align: center;
+
+}
+
+div.subtitulo:hover div.info {
+    height: auto;
+}
+
+div.info {
+    width: 100%;
+    height: 0px;
+    /* lo escondo */
+    background-color: #f5f5f5;
+    overflow: hidden;
+}
+
+div.info ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+p.info,
+.info ul li {
+    margin: 5px;
+    text-align: center;
+    color: black;
+}
+
+img.clientes {
+    width: 100%;
+}
+ul.lista{
+    list-style: none;
+}
+.icon{
+    background-color: #000080;
+}
+div.card {
+    margin: 20px;
+    border-radius: 5px;
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+}
+
+@media (max-width: 600px) {
+    div.card {
+        margin: 0%;
+    }
+}
+
+div.card img {
+    width: 100%;
+    height: 200px;
+}
+
+div.card-body h5 {
+    color: #00008B;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
+}
+
+div.card:hover .card-body {
+    opacity: 1;
+}
+
+form {
+    width: auto;
+    height: auto;
+    margin: auto;
+    box-sizing: border-box;
+    margin-top: 0px;
+    border: 1px solid;
+    border-radius: 7px;
+}
+
+form.forma {
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 0px;
+    border: 1px solid;
+    border-radius: 7px;
+}
+
+@media (max-width: 600px) {
+    .mapa {
+        width: 100%;
+    }
+}
+
+input,
+textarea {
+    width: 100%;
+    margin-bottom: 0px;
+    padding-bottom: 3px;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.row {
+    height: auto;
+}
+
+.for {
+    margin-top: 0px;
+    margin-left: auto;
+    font-size: 1.5em;
+    padding: 0px auto;
+    font-weight: bold;
+}
+
+input:valid {
+    background-color: #AFBDF5;
+}
+
+@media (max-width: 480px) {
+    form {
+        width: 100%;
+    }
+}
+
+div.contacto {
+    background-color: #282a71;
+    text-align: center;
+    color: #f5f5f5;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+@media (max-width: 600px) {
+    div.contacto {
+        font-size: 1rem;
+    }
+}
+
+.pqrs {
+    width: 500px;
+    padding: 0;
+}
+
+@media (max-width: 600px) {
+    .pqrs {
+        width: 100%;
+    }
+}
+
+.pqrs label {
+    font-size: 20px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+}
+
+.pqrs input,
+.pqrs textarea {
+    width: 90%;
+    padding: 0;
+    margin: 0 20px;
+}
+
+.pqrs select {
+    margin-left: 130px;
+    font-size: 20px;
+    width: 50%;
+}
+
+.pqrs .btn {
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 10px;
+    padding-top: 0;
+    background-color: #0000ff;
+}
+
+.form-buscar {
+    border: 0px;
+}
+
+footer {
+    text-align: center;
+    margin: 2rem;
+}
+
+
+div.login {
+    width: auto;
+    height: auto;
+    padding: 5rem 0 0 0;
+}
+
+div.login center h3,
+label {
+    color: #0000ff;
+}
+
+div.login input[type=password] {
+    background-color: none;
+}
+
+div.login input.boton {
+    color: #fff;
+    background-color: #000080;
+    width: 10px;
+    padding: 6px 12rem;
+    margin: 0 auto;
+    text-align: center;
+    height: 34px;
+}
+
+div.login form {
+    border: none;
+}
+
+.formedit {
+    border: none;
+}
