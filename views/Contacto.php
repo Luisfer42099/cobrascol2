@@ -29,12 +29,12 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6">
-            <form class="forma">
+            <form action="php/modelo/Enviar.php" method="POST" class="forma">
                 <p class="for"> FORMULARIO DE CONTACTO</p>
                 <fieldset>
                     <legend>Datos personales:</legend>
                     <label>Nombre:</label><br>
-                    <input type="text" name="NOMBRE" size="80" maxlength="50" required pattern="[A-Za-z0-9]+" /><br />
+                    <input type="text" name="NOMBRE" size="80" maxlength="50" required/><br />
                     <label>Dirección:</label><br>
                     <input type="text" name="DIRECCION" size="80" maxlength="50" required /><br />
                     <label>E-Mail:</label><br>

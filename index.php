@@ -1,5 +1,13 @@
 <?php require_once 'views/header.php'; ?>
 
+<div class="social">
+    <ul>
+        <li><a href="https://www.facebook.com/cobrascol.ltda2" target="_blank" class="icon icon-facebook-1"></a></li>
+        <li><a href="https://www.instagram.com/cobrascolltda/?hl=es-la" target="_blank" class="icon icon-instagram"></a></li>
+        <li><a href="https://api.whatsapp.com/send?phone=322 3947963&text=Hola, Nececito mas informacion!" target="_blank" class="icon icon-whatsapp"></a></li>
+    </ul+>
+</div>
+
 <nav class="navbar navbar-expand-lg navbar-light sticky-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="imagenes/Fondoarreglado.png" alt="Logo cobrascol"></a>

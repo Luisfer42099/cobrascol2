@@ -4,9 +4,9 @@
             <h1>Nuestros Clientes</h1>
             <img class="clientes" src="imagenes/Cobrascol-asesor.jpg" alt="cobrascol asesor">
             <ul class="lista">
-            <li><i clasa="icon icon-user-plus"></i> Scotiabank Colpatria.</li>
-            <li><i clasa="icon icon-user-plus"></i> Gestiones y Cobranzas S.A.</li>
-            <li><i clasa="icon icon-user-plus"></i> Falabella.</li>
+            <li><i class="icon-user-plus"></i> Scotiabank Colpatria.</li>
+            <li><i class="icon-user-plus"></i> Gestiones y Cobranzas S.A.</li>
+            <li><i class="icon-user-plus"></i> Falabella.</li>
             </ul>
         </div>
     </div>
