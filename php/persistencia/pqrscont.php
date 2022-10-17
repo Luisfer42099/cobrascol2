@@ -1,7 +1,8 @@
 <?php
     require_once '../modelo/pqrs.php';
-     
-    if(isset($_POST)){
+    $peticionn = new pqrs();
+
+    if(isset($_POST['Enviar'])){
         $cedula = isset($_POST['cedula']) ? $_POST['cedula'] : false;
         $nombre = isset($_POST['nombre']) ? $_POST['nombre'] : false;
         $apellido = isset($_POST['apellido']) ? $_POST['apellido'] : false;
@@ -11,10 +12,6 @@
         $mensaje = isset($_POST['mensaje']) ? $_POST['mensaje'] : false;
         
         if($cedula && $nombre && $apellido && $telefono && $tipo && $correo && $mensaje){
-            
-            
-
-            $peticionn = new pqrs();
             $peticionn->setCedula($cedula);
             $peticionn->setNombre($nombre);
             $peticionn->setApellido($apellido);
@@ -43,25 +40,37 @@
             if($save){
                 echo'<script type="text/javascript">
                     alert("Tu PQR ha sido creado y enviado a tu correo.");
-                    window.location.href="../../index.html";
+                    window.location.href="../../index.php";
                     </script>';
             } else {
                 echo'<script type="text/javascript">
                     alert("Ha ocurrido una falla en nuestro sistema, por favor intentelo nuevamente");
-                    window.location.href="../../pqrs.html";
+                    window.location.href="../../index.php";
                     </script>';
             }
         } else {
             echo'<script type="text/javascript">
                     alert("Ha ocurrido una falla en nuestro sistema, por favor intentelo nuevamente");
-                    window.location.href="../../pqrs.html";
+                    window.location.href="../../index.php";
                     </script>';
             
         }
-    } else {
-        echo'<script type="text/javascript">
-                    alert("Ha ocurrido una falla en nuestro sistema, por favor intentelo nuevamente");
-                    window.location.href="../../pqrs.html";
+    } 
+
+    if(isset($_POST['Descargar'])){
+        $nombre = isset($_POST['Nombre']) ? $_POST['Nombre'] : false;
+        $email = isset($_POST['Email']) ? $_POST['Email'] : false;
+        $peticionn->setNombre($nombre);
+        $peticionn->setEmail($email);
+        $res = $peticionn->saveDescarga();
+
+        if($res){
+            header("Location: ../../PDF/Personal-Finance-eBook.pdf");
+        } else {
+            echo '<script type="text/javascript">
+                    alert("Ha ocurrido una falla en nuestra descarga.");
+                    window.location.href="../../index.php";
                     </script>';
+        }
     }
 ?>

@@ -16,6 +16,15 @@
                 return false;
             }
         }
+        function getDescargas(){
+            $sql = "SELECT * FROM Descargas";
+            $res = mysqli_query($this->db, $sql);
+            if($res){
+                return $res;
+            } else {
+                return false;
+            }
+        }
         function getOne($id){
             $sql = "SELECT * FROM pqrs  WHERE id = '$id'";
             $res = mysqli_query($this->db, $sql);

@@ -25,9 +25,17 @@ h2 {
     margin-bottom: 30px;
     text-align: center;
 }
-
+h4{
+    color: #00008B;
+    text-align: center;
+}
 h1.consulta {
     font-size: 3rem;
+    font-weight: bold;
+}
+
+div.descarga{
+    padding: 2rem 8rem;
 }
 
 @media (max-width: 600px) {
@@ -37,6 +45,9 @@ h1.consulta {
 
     h3 {
         font-size: 1.5rem;
+    }
+    div.descarga{
+        padding: 0%;
     }
 }
 

@@ -23,6 +23,11 @@
             $datos = $activa->deleteData($id);            
             return $datos;
         }
+        function getDownloads(){
+            $activa = new Administracion();
+            $datos = $activa->getDescargas();
+            return $datos;
+        }
     }
 
 ?>

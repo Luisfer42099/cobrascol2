@@ -4,7 +4,7 @@
     <ul>
         <li><a href="https://www.facebook.com/cobrascol.ltda2" target="_blank" class="icon icon-facebook-1"></a></li>
         <li><a href="https://www.instagram.com/cobrascolltda/?hl=es-la" target="_blank" class="icon icon-instagram"></a></li>
-        <li><a href="https://api.whatsapp.com/send?phone=322 3947963&text=Hola, Nececito mas informacion!" target="_blank" class="icon icon-whatsapp"></a></li>
+        <li><a href="https://wa.me/+573223947963" target="_blank" class="icon icon-whatsapp"></a></li>
     </ul+>
 </div>
 
